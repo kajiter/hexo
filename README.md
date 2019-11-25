@@ -1,6 +1,5 @@
 # hexo - personal website
-## 此仓库用于更换电脑后快速配置自己的Hexo，从而实现跨物理平台维护个人博客。
-核心内容是恢复软件环境（git, node.js, npm, hexo）和恢复博客配置（node_modules，public ，db.json）
+### 此仓库用于更换电脑后快速配置自己的Hexo，从而实现跨物理平台维护个人博客。核心内容是恢复软件环境（git, node.js, npm, hexo）和恢复博客配置（node_modules，public ，db.json）
 ---
 
 **一、恢复环境**
@@ -19,10 +18,10 @@ git config --global user.email "yourgithubemail"
 ③设置ssh key
 ```
 ssh-keygen -t rsa -C "youremail"
-#生成后填到github和coding上 #(optional - coding平台)
-    #验证是否成功(optional)
+#生成后填到github和coding上         #(optional - coding平台)
+    #(optional 验证是否成功)
     ssh -T git@github.com
-    ssh -T git@git.coding.net     #(optional - coding平台)
+    ssh -T git@git.coding.net    #(optional - coding平台)
 ```
 ④安装nodejs , npm包管理器
 ```
@@ -41,6 +40,7 @@ git clone git@github.com:kajiter/hexo.git
 ```
 ---
 **二、恢复配置**
+
 ⑦必须 cd 到 config.yml 所在的路径下
 ```
 (cd MyBlog/clBlog)
@@ -58,12 +58,14 @@ hexo d
 ```
 ---
 **三、完成部署，开始创作**
+
 ⑨可以开始写你的新博客了
 ```
 hexo new NewBlogName
 ```
 ---
 **四、git 命令复习**
+
 ```
 git status
 git log
