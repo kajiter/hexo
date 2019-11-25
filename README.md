@@ -5,22 +5,27 @@
 一、恢复环境
 ①安装git
 sudo apt-get install git
+
 ②设置git全局邮箱和用户名
 git config --global user.name "yourgithubname"
 git config --global user.email "yourgithubemail"
+
 ③设置ssh key
 ssh-keygen -t rsa -C "youremail"
 #生成后填到github和coding上 #(optional - coding平台)
     #验证是否成功(optional)
     ssh -T git@github.com
     ssh -T git@git.coding.net     #(optional - coding平台)
+    
 ④安装nodejs , npm包管理器
 sudo apt-get install nodejs
 sudo apt-get install npm
+
 ⑤安装hexo
 sudo npm install hexo-cli -g
+
 ⑥把此工程 clone 到合适位置 
-git clone git@github.com:kajiter/hexo.git 
+git clone git@github.com:kajiter/hexo.git
 
 二、恢复配置
 ⑦必须 cd 到 config.yml 所在的路径下（cd MyBlog/clBlog）
