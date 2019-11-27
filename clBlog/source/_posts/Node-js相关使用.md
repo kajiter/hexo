@@ -2,6 +2,7 @@
 title: Node.js相关使用
 date: 2019-11-27 17:49:47
 tags:
+cover: https://i.loli.net/2019/11/28/Kl7LfH1ItNCW8Jv.png
 ---
 ## Node.js 是一个基于 Chrome v8 引擎的 JavaScript 运行环境。npm是 Node.js 自带的包管理工具
 
@@ -13,6 +14,7 @@ tags:
 
 Node.js 使 JavaScript 语言可以运行在服务端，使用事件驱动，非阻塞 I/O模型。它轻量级和高效的特性使得它非常适合在分布式设备上运行数据密集型的实时应用。
 
+![node.jpg](https://i.loli.net/2019/11/28/Kl7LfH1ItNCW8Jv.png)
 
 ## npm是 Node.js 自带的包管理工具。(Node Package Manager)
 

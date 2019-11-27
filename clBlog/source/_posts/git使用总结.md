@@ -2,6 +2,7 @@
 title: git使用总结
 date: 2019-11-25 16:09:57
 tags:
+cover: https://i.loli.net/2019/11/28/lqIS1d5VyJuhcjt.jpg
 ---
 ## 首次使用 git 或长期未使用 git 导致 ssh 秘钥过期
 

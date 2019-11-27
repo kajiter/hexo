@@ -2,7 +2,7 @@
 title: Linux+Vim常用操作
 date: 2019-11-25 13:08:06
 tags:
-#cover: https://i.loli.net/2019/11/25/rvPNfymuaCsW2Gn.jpg
+cover: https://i.loli.net/2019/11/28/K7rj8viNSwI5WJG.jpg
 ---
 
 

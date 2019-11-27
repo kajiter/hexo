@@ -2,6 +2,7 @@
 title: Markdown
 date: 2019-11-27 13:39:36
 tags:
+cover: https://i.loli.net/2019/11/28/ZnYCwlHD1x4AzGF.jpg
 ---
 
 >### Markdown 就是 Mark（标记后）down (写下来)，就是所记即所得。
