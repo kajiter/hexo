@@ -13,6 +13,8 @@ cover: https://i.loli.net/2019/11/28/H5ns3cZtWmGOB7M.jpg
 
 <!--more-->
 
+![Screen Shot 2019-11-27 at 16.16.48.png](https://i.loli.net/2019/11/28/BG6i4xLtr3a87Y5.png)
+
 
 ## JavaScript （简称“JS”）
 是一种轻量级的、解释性的动态编程语言。
