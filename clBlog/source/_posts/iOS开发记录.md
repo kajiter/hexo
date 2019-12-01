@@ -20,20 +20,19 @@ cover: https://i.loli.net/2019/11/28/3rvwfU9nB1ldzVo.jpg
 
 ## 关于Cocopods
 ```
-pod update --no-repo-update
+pod update --verbose --no-repo-update
 pod install --verbose --no-repo-update
 
 ```
 ## Podfile 默认初始化文本
 ```
-platform :ios , '8.0'
+platform :ios , '9.0'
 use_frameworks!
 inhibit_all_warnings!  ##屏蔽pod一切警告
 target 'ProjectName’ do
-  pod 'AFNetworking', '~> 2.6'
+  pod 'AFNetworking'
   pod 'FMDB'
   pod 'MJRefresh'
-  pod 'MJExtension'
   pod 'ShareSDK3'
   
 end
@@ -47,9 +46,10 @@ end
 选择工程的 Target -> Build Settings 菜单，找到”User Header Search Paths”设置项
 新增一个值"$(PODS_ROOT)"，并且选择”recursive”，这样xcode就会在项目目录中递归搜索文件
 
-### CocoaPods安装教程(需要把淘宝网址改为 https ，其他不变)
+### CocoaPods安装教程
 
-### [http://www.bubuko.com/infodetail-425274.html ](http://www.bubuko.com/infodetail-425274.html)
+
+### ---------  [CocoaPods安装教程](http://kajiter.github.io/2017/10/01/MacOS上安装-更新cocopods教程/)
 
 
 ## 系统默认的字体为：
@@ -64,7 +64,7 @@ font-size: 17.00pt
 Xcode8里边 Edit Scheme-> Run -> Arguments, 在Environment Variables里边添加
 ```OS_ACTIVITY_MODE ＝ Disable```
 
-![apple-phone-head.jpg](https://i.loli.net/2019/11/28/1B8LlwjkaIP6fvs.jpg)
+
 
 # 关于代码：
 
