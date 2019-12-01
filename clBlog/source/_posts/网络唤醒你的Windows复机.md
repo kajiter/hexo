@@ -1,13 +1,15 @@
 ---
-title: 网络唤醒你的Windows复机
+title: 网络唤醒你的电脑
 date: 2019-11-29 16:32:06
 tags:
 cover:
 ---
 
+### wakeonlan  00:D8:61:71:FF:97
+
 ## 本文采用演示示例为：
 ### 1.主工作机 MacBookPro 
-### 2.复机 微星B450+Windows10
+### 2.被唤醒机 微星B450+Windows10
 ### 3.网络条件：同一路由器下，即同一个网络。
 ### 4.MacOS 下软件名：wakeonlan （Linux 插件）
 ### 5.Windows 下软件名：Wake on Lan Monitor  (主要用于测通，用完即删)
