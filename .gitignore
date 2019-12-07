@@ -1,5 +1,7 @@
 # Hexo File
 .deploy_git
+db.json
+public/
 
 # Xcode
 #
