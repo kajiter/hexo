@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  
+  <title>网络唤醒你的电脑 - 烟雨行舟</title>
+  <meta charset="UTF-8">
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png">
+  <meta name="description" content="wakeonlan  00:D8:61:71:FF:97本文采用演示示例为：1.主工作机 MacBookPro2.被唤醒机 微星B450+Windows103.网络条件：同一路由器下，即同一个网络。4.MacOS 下软件名：wakeonlan （Linux 插件）5.Windows 下软件名：Wake on Lan Monitor  (主要用于测通，用完即删)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络唤醒你的电脑">
+<meta property="og:url" content="http://kajiter.github.io/2019/11/29/网络唤醒你的Windows复机/index.html">
+<meta property="og:site_name" content="烟雨行舟">
+<meta property="og:description" content="wakeonlan  00:D8:61:71:FF:97本文采用演示示例为：1.主工作机 MacBookPro2.被唤醒机 微星B450+Windows103.网络条件：同一路由器下，即同一个网络。4.MacOS 下软件名：wakeonlan （Linux 插件）5.Windows 下软件名：Wake on Lan Monitor  (主要用于测通，用完即删)">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2019/11/29/wGH7YtIJKDNaX3C.png">
+<meta property="og:image" content="https://i.loli.net/2019/11/29/KJ84unm3rdylezv.png">
+<meta property="og:image" content="https://i.loli.net/2019/11/29/Cuf1cLPwhx8UT6t.png">
+<meta property="og:image" content="https://i.loli.net/2019/11/29/sdrVHZgb1hEa3p2.png">
+<meta property="og:image" content="https://i.loli.net/2019/11/29/UBSOgPxvATrJcXM.png">
+<meta property="og:updated_time" content="2019-12-01T08:36:49.267Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="网络唤醒你的电脑">
+<meta name="twitter:description" content="wakeonlan  00:D8:61:71:FF:97本文采用演示示例为：1.主工作机 MacBookPro2.被唤醒机 微星B450+Windows103.网络条件：同一路由器下，即同一个网络。4.MacOS 下软件名：wakeonlan （Linux 插件）5.Windows 下软件名：Wake on Lan Monitor  (主要用于测通，用完即删)">
+<meta name="twitter:image" content="https://i.loli.net/2019/11/29/wGH7YtIJKDNaX3C.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
+  <link rel="stylesheet" href="/css/style.css?v=1575705635462">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://i.loli.net/2019/11/25/zkSsGC7NlrM3jJ8.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="cl" class="mdui-btn mdui-btn-icon"><img src="https://i.loli.net/2019/11/25/GBCl3rmnS4aZRM6.jpg"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="cl">
+            <img src="https://i.loli.net/2019/11/25/GBCl3rmnS4aZRM6.jpg" alt="cl">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>19</div>
+        <div><span>标签</span>0</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </ul>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">社交按钮</h3>
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/28273557" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/kajiter/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a><a class="mdui-ripple" href="http://weibo.com/" target="_blank" mdui-tooltip="{content: 'Weibo'}" style="color: rgb(125, 23, 90);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-weibo"></i>
+        </a>
+    </div>
+</div>
+  
+  
+
+  
+  
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2019 cl
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+    <div class="nexmoe-post-cover"> 
+        
+            <img src="https://i.loli.net/2019/11/25/zkSsGC7NlrM3jJ8.jpg">
+        
+        <h1>网络唤醒你的电脑</h1>
+    </div>
+  <div class="nexmoe-post-meta">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月29日</a>
+    <a><i class="nexmoefont icon-areachart"></i>1.1k 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 5 分钟</a>
+    
+    
+  </div>
+  <article>
+    <h3 id="wakeonlan-00-D8-61-71-FF-97"><a href="#wakeonlan-00-D8-61-71-FF-97" class="headerlink" title="wakeonlan  00:D8:61:71:FF:97"></a>wakeonlan  00:D8:61:71:FF:97</h3><h2 id="本文采用演示示例为："><a href="#本文采用演示示例为：" class="headerlink" title="本文采用演示示例为："></a>本文采用演示示例为：</h2><h3 id="1-主工作机-MacBookPro"><a href="#1-主工作机-MacBookPro" class="headerlink" title="1.主工作机 MacBookPro"></a>1.主工作机 MacBookPro</h3><h3 id="2-被唤醒机-微星B450-Windows10"><a href="#2-被唤醒机-微星B450-Windows10" class="headerlink" title="2.被唤醒机 微星B450+Windows10"></a>2.被唤醒机 微星B450+Windows10</h3><h3 id="3-网络条件：同一路由器下，即同一个网络。"><a href="#3-网络条件：同一路由器下，即同一个网络。" class="headerlink" title="3.网络条件：同一路由器下，即同一个网络。"></a>3.网络条件：同一路由器下，即同一个网络。</h3><h3 id="4-MacOS-下软件名：wakeonlan-（Linux-插件）"><a href="#4-MacOS-下软件名：wakeonlan-（Linux-插件）" class="headerlink" title="4.MacOS 下软件名：wakeonlan （Linux 插件）"></a>4.MacOS 下软件名：wakeonlan （Linux 插件）</h3><h3 id="5-Windows-下软件名：Wake-on-Lan-Monitor-主要用于测通，用完即删"><a href="#5-Windows-下软件名：Wake-on-Lan-Monitor-主要用于测通，用完即删" class="headerlink" title="5.Windows 下软件名：Wake on Lan Monitor  (主要用于测通，用完即删)"></a>5.Windows 下软件名：Wake on Lan Monitor  (主要用于测通，用完即删)</h3><a id="more"></a>
+
+<p>“远程控制” 这一操作对我们来说都不陌生，从当年的 QQ 远程控制，到后来的微信视频“远程”帮教父母解决各种这样的软件问题，我一直想找出一个最简洁高效的方案，向日葵控制端 之类的商业软件仍避免不了物理开机的问题，所说也有“花生棒”之类的物理配件，但是特别是对于2000 年之后的PC，主板网卡自带网络唤醒功能，而我们要做的就是攻克远程唤醒这最后一个障碍。</p>
+<h2 id="一、确认被控制计算机硬件上支持网络唤醒"><a href="#一、确认被控制计算机硬件上支持网络唤醒" class="headerlink" title="一、确认被控制计算机硬件上支持网络唤醒"></a>一、确认被控制计算机硬件上支持网络唤醒</h2><p>硬件上实现网络开机，需要主板、网卡、电源 3 个设备支持。首先需要查看主板是否支持 Wake-Up OnInternal Modem（WOM）或者 Wake-up OnLAN（WOL）技术，如果支持就说明主板支持远程开机。<br>能否实现远程唤醒，其中最主要的一个部件就是网卡，一般来说 2000 年以后的主板均支持，更不用说最近两年的新机型。但如果你对你的主板没有信心，那么一定要进 BIOS 里进行检查，或上网搜索自己的主板相关的  Wakeup On Lan(WOL)信息。</p>
+<h3 id="这里以最流行的-微星-B450m-迫击炮-为例，开启主板Wakeup-On-Lan-WOL-功能。"><a href="#这里以最流行的-微星-B450m-迫击炮-为例，开启主板Wakeup-On-Lan-WOL-功能。" class="headerlink" title="这里以最流行的 微星 B450m -迫击炮 为例，开启主板Wakeup On Lan(WOL) 功能。"></a>这里以最流行的 微星 B450m -迫击炮 为例，开启主板Wakeup On Lan(WOL) 功能。</h3><p> <code>高级</code> -&gt;<br>    <code>唤醒事件设置</code> -&gt;<br>        <code>将 PCIE设备唤醒</code> 和 <code>网络唤醒</code> 设置为 <code>允许 (Enable)</code></p>
+<hr>
+<h3 id="注：不同的机型差异较大，需要自行在互联网搜集自己型号主板-BIOS-的开启Wakeup-On-Lan-WOL-功能。"><a href="#注：不同的机型差异较大，需要自行在互联网搜集自己型号主板-BIOS-的开启Wakeup-On-Lan-WOL-功能。" class="headerlink" title="注：不同的机型差异较大，需要自行在互联网搜集自己型号主板 BIOS 的开启Wakeup On Lan(WOL) 功能。"></a>注：不同的机型差异较大，需要自行在互联网搜集自己型号主板 BIOS 的开启Wakeup On Lan(WOL) 功能。</h3><hr>
+<h2 id="二、Windows系统设置"><a href="#二、Windows系统设置" class="headerlink" title="二、Windows系统设置"></a>二、Windows系统设置</h2><p>这里给出<a href="https://www.jianshu.com/p/d89b5560c3ed" target="_blank" rel="noopener">Intel的网卡设置教程</a></p>
+<p>然而我的AMD 主板并不需要这么复杂，网卡不需要做出设置。</p>
+<p>需要做的是获取此电脑的 ip 地址，和物理 MAC 地址。记在小本本上。</p>
+<p>小白的话是打开路由器查看：<br>不同路由器界面不一，但原理相通。<br><img src="https://i.loli.net/2019/11/29/wGH7YtIJKDNaX3C.png" alt="Screen Shot 2019-11-29 at 16.40.47.png"></p>
+<p>有 Linux 基础的同学，自然是进命令行查看，这里提示下非 Windows 用户可以在 win10 中搜索使用 “Windows PowerShell” ，这个要比 cmd 更 Linux 一点点。</p>
+<pre><code>$ ipconfig
+</code></pre><hr>
+<h2 id="三、Windows-安装测试接受软件"><a href="#三、Windows-安装测试接受软件" class="headerlink" title="三、Windows 安装测试接受软件"></a>三、Windows 安装测试接受软件</h2><p>软件名：Wake on Lan Monitor  (主要用于测试通接受到唤醒 UDP，测试成功后即可删除)</p>
+<h3 id="官方下载链接"><a href="#官方下载链接" class="headerlink" title="官方下载链接"></a><a href="https://www.depicus.com/wake-on-lan/wake-on-lan-monitor" target="_blank" rel="noopener">官方下载链接</a></h3><h3 id="安装后点击-start-，即进入测试等待状态。"><a href="#安装后点击-start-，即进入测试等待状态。" class="headerlink" title="安装后点击 start ，即进入测试等待状态。"></a>安装后点击 start ，即进入测试等待状态。</h3><hr>
+<h2 id="四、MacOS-安装-wakeonlan-包"><a href="#四、MacOS-安装-wakeonlan-包" class="headerlink" title="四、MacOS 安装 wakeonlan 包"></a>四、MacOS 安装 wakeonlan 包</h2><pre><code>➜  ~ brew install wakeonlan
+</code></pre><p>安装成功后，使用代码启动，发送 wakeup 的 UDP<br>注意-p 4343 这个端口号是 Windows 上 Wake on Lan Monitor 的测试端口，实际使用时不需要加端口号。</p>
+<h3 id="此处的-MAC-地址-即为第二步-Windows-下查看到的-MAC地址-，这里用00-D8-61-71-FF-97-表示"><a href="#此处的-MAC-地址-即为第二步-Windows-下查看到的-MAC地址-，这里用00-D8-61-71-FF-97-表示" class="headerlink" title="此处的 MAC 地址 即为第二步 Windows 下查看到的 MAC地址 ，这里用00:D8:61:71:FF:97 表示"></a>此处的 <code>MAC 地址</code> 即为第二步 Windows 下查看到的 MAC地址 ，这里用<code>00:D8:61:71:FF:97</code> 表示</h3><pre><code>➜  ~ wakeonlan -p 4343  00:D8:61:71:FF:97
+Sending magic packet to 255.255.255.255:4343 with 00:D8:61:71:FF:97</code></pre><h3 id="这时如果你发现-Windows-中的-Wake-on-Lan-Monitor-软件中k开始打印数据，即表示一切配置成功，你终于可以实现一行代码网络唤醒另一台主机了！"><a href="#这时如果你发现-Windows-中的-Wake-on-Lan-Monitor-软件中k开始打印数据，即表示一切配置成功，你终于可以实现一行代码网络唤醒另一台主机了！" class="headerlink" title="这时如果你发现 Windows 中的 Wake on Lan Monitor 软件中k开始打印数据，即表示一切配置成功，你终于可以实现一行代码网络唤醒另一台主机了！"></a>这时如果你发现 Windows 中的 Wake on Lan Monitor 软件中k开始打印数据，即表示一切配置成功，你终于可以实现一行代码网络唤醒另一台主机了！</h3><h3 id="如果你Windows-中的Wake-on-Lan-Monitor毫无反应，则表示你哪一步做错了，返回好好检查一下吧。"><a href="#如果你Windows-中的Wake-on-Lan-Monitor毫无反应，则表示你哪一步做错了，返回好好检查一下吧。" class="headerlink" title="如果你Windows 中的Wake on Lan Monitor毫无反应，则表示你哪一步做错了，返回好好检查一下吧。"></a>如果你Windows 中的Wake on Lan Monitor毫无反应，则表示你哪一步做错了，返回好好检查一下吧。</h3><h2 id="五、实际使用"><a href="#五、实际使用" class="headerlink" title="五、实际使用"></a>五、实际使用</h2><p>把你的 Windows 关机后，在 Mac 中输入</p>
+<pre><code>➜  ~ wakeonlan  你记下的MAC地址
+Sending magic packet to 255.255.255.255:9 with 00:**:61:71:FF:97
+</code></pre><h1 id="铛铛铛铛-大功告成！"><a href="#铛铛铛铛-大功告成！" class="headerlink" title="铛铛铛铛~~  大功告成！"></a>铛铛铛铛~~  大功告成！</h1><hr>
+<p>这里特意截出来 wakeonlan 的安装信息，18KB真的小。</p>
+<pre><code>➜  ~ brew install wakeonlan
+
+==&gt; Downloading https://mirrors.ustc.edu.cn/homebrew-bottles/bottles/wakeonlan-0
+######################################################################## 100.0%
+==&gt; Pouring wakeonlan-0.41.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/wakeonlan/0.41: 6 files, 18.6KB
+</code></pre><hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h1 id="扩展和补充知识点"><a href="#扩展和补充知识点" class="headerlink" title="扩展和补充知识点"></a>扩展和补充知识点</h1><h2 id="MacBookPro-上控制-Windows-的官方软件"><a href="#MacBookPro-上控制-Windows-的官方软件" class="headerlink" title="MacBookPro 上控制 Windows 的官方软件"></a>MacBookPro 上控制 Windows 的官方软件</h2><h3 id="Microsoft-Remote-Desktop-for-Mac"><a href="#Microsoft-Remote-Desktop-for-Mac" class="headerlink" title="Microsoft Remote Desktop for Mac"></a><a href="https://install.appcenter.ms/orgs/rdmacios-k2vy/apps/Microsoft-Remote-Desktop-for-Mac/distribution_groups/All-users-of-Microsoft-Remote-Desktop-for-Mac" target="_blank" rel="noopener">Microsoft Remote Desktop for Mac</a></h3><h3 id="microsoft-官方使用文档"><a href="#microsoft-官方使用文档" class="headerlink" title="microsoft 官方使用文档"></a><a href="https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac" target="_blank" rel="noopener">microsoft 官方使用文档</a></h3><hr>
+<h1 id="一些题外话，留作记录"><a href="#一些题外话，留作记录" class="headerlink" title="一些题外话，留作记录"></a>一些题外话，留作记录</h1><h2 id="设置-Windows-远程桌面"><a href="#设置-Windows-远程桌面" class="headerlink" title="设置 Windows 远程桌面"></a>设置 Windows 远程桌面</h2><h3 id="Windows-设置允许远程连接"><a href="#Windows-设置允许远程连接" class="headerlink" title="Windows 设置允许远程连接"></a>Windows 设置允许远程连接</h3><p><img src="https://i.loli.net/2019/11/29/KJ84unm3rdylezv.png" alt="851575021625_.pic_hd.jpg"></p>
+<p><img src="https://i.loli.net/2019/11/29/Cuf1cLPwhx8UT6t.png" alt="861575021758_.pic_hd.jpg"></p>
+<hr>
+<h2 id="设置-Windows-访问局域网共享文档"><a href="#设置-Windows-访问局域网共享文档" class="headerlink" title="设置 Windows 访问局域网共享文档"></a>设置 Windows 访问局域网共享文档</h2><p><img src="https://i.loli.net/2019/11/29/sdrVHZgb1hEa3p2.png" alt="871575021914_.pic_hd.jpg"></p>
+<p>首次进入需要设置游客账号密码，这里没有截图<br><img src="https://i.loli.net/2019/11/29/UBSOgPxvATrJcXM.png" alt="881575021948_.pic_hd.jpg"></p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+  </article>
+  
+    
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong>本文作者：</strong>cl<br>
+<strong>本文链接：</strong><a href="http://kajiter.github.io/2019/11/29/网络唤醒你的Windows复机/" title="http://kajiter.github.io/2019/11/29/网络唤醒你的Windows复机/" target="_blank" rel="noopener">http://kajiter.github.io/2019/11/29/网络唤醒你的Windows复机/</a><br>
+
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+</div>
+
+
+  
+  <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="/js/app.js?v=1575705635466"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+
+</html>

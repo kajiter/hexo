@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  
+  <title>Linux+Vim常用操作 - 烟雨行舟</title>
+  <meta charset="UTF-8">
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png">
+  <meta name="description" content="#####注意 “—&amp;gt;”【】均为便于读者记忆的解释">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux+Vim常用操作">
+<meta property="og:url" content="http://kajiter.github.io/2019/11/25/Linux-Vim常用操作/index.html">
+<meta property="og:site_name" content="烟雨行舟">
+<meta property="og:description" content="#####注意 “—&amp;gt;”【】均为便于读者记忆的解释">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-27T16:58:54.711Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux+Vim常用操作">
+<meta name="twitter:description" content="#####注意 “—&amp;gt;”【】均为便于读者记忆的解释">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
+  <link rel="stylesheet" href="/css/style.css?v=1575705635500">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://i.loli.net/2019/11/25/zkSsGC7NlrM3jJ8.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="cl" class="mdui-btn mdui-btn-icon"><img src="https://i.loli.net/2019/11/25/GBCl3rmnS4aZRM6.jpg"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="cl">
+            <img src="https://i.loli.net/2019/11/25/GBCl3rmnS4aZRM6.jpg" alt="cl">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>19</div>
+        <div><span>标签</span>0</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </ul>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">社交按钮</h3>
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/28273557" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/kajiter/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a><a class="mdui-ripple" href="http://weibo.com/" target="_blank" mdui-tooltip="{content: 'Weibo'}" style="color: rgb(125, 23, 90);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-weibo"></i>
+        </a>
+    </div>
+</div>
+  
+  
+
+  
+  
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2019 cl
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+    <div class="nexmoe-post-cover"> 
+        
+        <img src="https://i.loli.net/2019/11/28/K7rj8viNSwI5WJG.jpg">
+        
+        <h1>Linux+Vim常用操作</h1>
+    </div>
+  <div class="nexmoe-post-meta">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月25日</a>
+    <a><i class="nexmoefont icon-areachart"></i>747 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+    
+    
+  </div>
+  <article>
+    <p>#####注意 “—&gt;”【】均为便于读者记忆的解释</p>
+<a id="more"></a>
+<hr>
+<blockquote>
+<p>Linux文件/路径操作</p>
+</blockquote>
+<p>基础跳转：  <code>cd    /User/name/Document/myCode</code> 跳转到某一路径<br>基础回跳：</p>
+<ul>
+<li><code>cd  ..</code>  回到上一级目录, </li>
+<li><code>cd  ~</code>  回到HOME目录,</li>
+<li><code>cd  -</code>    查看所在目录。</li>
+</ul>
+<p>新建文件  <code>touch   aa.txt</code>   还有另一种思路<code>vim aa.txt</code> 但是记住<code>:wq</code>保存退出，将自动在当前目录新建该文件<br>新建文件夹:<code>mkdir   myFile</code>【myFile是文件夹名称，可任意】<br>修改文件名称:<code>mv  西游记.txt(原文件名)  新三国.jpg(新的文件名)</code> —&gt; move A (to) B<br>删除某一路径下的文件<code>rm a.txt</code><br>注意若删除某一文件夹的所有文件，应该使用循环遍历删除: </p>
+<h2 id="rm-rf-User-name-Document-岛国风光"><a href="#rm-rf-User-name-Document-岛国风光" class="headerlink" title="rm -rf  /User/name/Document/岛国风光"></a><code>rm -rf  /User/name/Document/岛国风光</code></h2><blockquote>
+<p>—–VIM—–对于Vim的操作一定要基于英文输入法，用汉语输入是一种既low又召bug的行为</p>
+</blockquote>
+<p>编辑文件：<code>vi  a.rtf</code><br>进入编辑状态：<code>i</code><br>退出编辑状态：<code>ESC</code></p>
+<p>退出vi 编辑有三种方式:【注意先按ESC退出编辑模式 :也是关键字】</p>
+<ul>
+<li>:q                           【无操作退出，无修改时用】</li>
+<li>:q!                          【不保存退出，搞得乱七八糟时候用】</li>
+<li>:wq 或者 :x  【保存并推出，有一定操作且需要保存时用】</li>
+</ul>
+<p>查找某一内容：<code>/word</code>  【查询内容为“word”的地方】—&gt;这里可以类比全局搜索Ctrl + F ，特别是查找Git冲突“&gt;&gt;&gt;&gt;&gt;”时最为常用</p>
+<p>复制光标所在的一整行 : <code>yy</code><br>删除光标所在的一整行 : <code>dd</code></p>
+<p>粘贴剪切板内容：<code>p</code><br>回退刚才操作    ：<code>u</code></p>
+<hr>
+<blockquote>
+<p>关于vim的进阶用法</p>
+</blockquote>
+<hr>
+<p>显示行号<code>:set nu</code><br>隐藏行号 <code>:set nonu</code> 　<br>翻到下一页（向前翻页）<code>Ctrl + f</code>   —-&gt; f(ront)<br>翻到上一页（向后翻页）<code>Ctrl + b</code>  —-&gt; b(ack)<br><code>Ctrl + u</code>       向前翻半页</p>
+<h2 id="Ctrl-d-向后翻半页"><a href="#Ctrl-d-向后翻半页" class="headerlink" title="Ctrl + d     向后翻半页"></a><code>Ctrl + d</code>     向后翻半页</h2><blockquote>
+<p>对于 复制/删除 的进阶用法</p>
+</blockquote>
+<p><code>dd</code>        删除光标所在行    —-&gt;del dir<br><code>dw</code>        删除单词到尾部（包括空格）—-&gt;del word<br><code>de</code>        删除单词到尾部（不包括尾部空格）—-&gt;del end<br><code>d$</code>        删除当前到行尾的所有字符  —-&gt;del $(代表尾部)<br><code>d^</code>        删除当前到行首的所有字符 —-&gt;del ^(代表行首)<br>单行删除：<code>1d</code> —-&gt;（1为待删除行）<br>多行删除：<code>1,10d</code><br>光标所在行以下的N行:   <code>Ndd</code></p>
+<p><code>yy</code>        复制光标所在行到vi缓冲区<br><code>yw</code>        复制单词到尾部（包括空格）<br>//  <code>ye</code>        复制单词到尾部（不包括尾部空格）待检验<br><code>y$</code>        复制当前到行尾的所有字符<br><code>y^</code>        复制当前到行首的所有字符 </p>
+<hr>
+<p>这些都是常用的vi 语句，知道这些足够对付git 了，当然想了解更多的话，可以参考这篇文章：</p>
+<blockquote>
+<p><a href="https://www.jianshu.com/p/e66ae3add58d" target="_blank" rel="noopener">vi(vim)的常用操作</a></p>
+</blockquote>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+  </article>
+  
+    
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong>本文作者：</strong>cl<br>
+<strong>本文链接：</strong><a href="http://kajiter.github.io/2019/11/25/Linux-Vim常用操作/" title="http://kajiter.github.io/2019/11/25/Linux-Vim常用操作/" target="_blank" rel="noopener">http://kajiter.github.io/2019/11/25/Linux-Vim常用操作/</a><br>
+
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+</div>
+
+
+  
+  <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="/js/app.js?v=1575705635505"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+
+</html>

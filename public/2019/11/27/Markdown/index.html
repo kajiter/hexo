@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  
+  <title>Markdown - 烟雨行舟</title>
+  <meta charset="UTF-8">
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png">
+  <meta name="description" content="Markdown 就是 Mark（标记后）down (写下来)，就是所记即所得。Markdown 是通过字符来约束内容的，但是它是整行约束,即换行不继承">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown">
+<meta property="og:url" content="http://kajiter.github.io/2019/11/27/Markdown/index.html">
+<meta property="og:site_name" content="烟雨行舟">
+<meta property="og:description" content="Markdown 就是 Mark（标记后）down (写下来)，就是所记即所得。Markdown 是通过字符来约束内容的，但是它是整行约束,即换行不继承">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/2517476-5c6e85898cc83f30.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-11-27T16:58:54.712Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Markdown">
+<meta name="twitter:description" content="Markdown 就是 Mark（标记后）down (写下来)，就是所记即所得。Markdown 是通过字符来约束内容的，但是它是整行约束,即换行不继承">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/2517476-5c6e85898cc83f30.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
+  <link rel="stylesheet" href="/css/style.css?v=1575705635480">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://i.loli.net/2019/11/25/zkSsGC7NlrM3jJ8.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="cl" class="mdui-btn mdui-btn-icon"><img src="https://i.loli.net/2019/11/25/GBCl3rmnS4aZRM6.jpg"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="cl">
+            <img src="https://i.loli.net/2019/11/25/GBCl3rmnS4aZRM6.jpg" alt="cl">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>19</div>
+        <div><span>标签</span>0</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </ul>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">社交按钮</h3>
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/28273557" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/kajiter/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a><a class="mdui-ripple" href="http://weibo.com/" target="_blank" mdui-tooltip="{content: 'Weibo'}" style="color: rgb(125, 23, 90);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-weibo"></i>
+        </a>
+    </div>
+</div>
+  
+  
+
+  
+  
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2019 cl
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+    <div class="nexmoe-post-cover"> 
+        
+        <img src="https://i.loli.net/2019/11/28/ZnYCwlHD1x4AzGF.jpg">
+        
+        <h1>Markdown</h1>
+    </div>
+  <div class="nexmoe-post-meta">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月27日</a>
+    <a><i class="nexmoefont icon-areachart"></i>582 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+    
+    
+  </div>
+  <article>
+    <blockquote>
+<h3 id="Markdown-就是-Mark（标记后）down-写下来-，就是所记即所得。"><a href="#Markdown-就是-Mark（标记后）down-写下来-，就是所记即所得。" class="headerlink" title="Markdown 就是 Mark（标记后）down (写下来)，就是所记即所得。"></a>Markdown 就是 Mark（标记后）down (写下来)，就是所记即所得。</h3><h3 id="Markdown-是通过字符来约束内容的，但是它是整行约束-即换行不继承"><a href="#Markdown-是通过字符来约束内容的，但是它是整行约束-即换行不继承" class="headerlink" title="Markdown 是通过字符来约束内容的，但是它是整行约束,即换行不继承"></a>Markdown 是通过字符来约束内容的，但是它是整行约束,即换行不继承</h3></blockquote>
+<a id="more"></a>
+
+<hr>
+<h2 id="“-”的个数表示1-6级标题："><a href="#“-”的个数表示1-6级标题：" class="headerlink" title="“#”的个数表示1-6级标题："></a>“#”的个数表示1-6级标题：</h2><p>#一级标题<br>###三级标题</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><hr>
+<h2 id="表示加粗文字"><a href="#表示加粗文字" class="headerlink" title="**      **表示加粗文字"></a>**      **表示加粗文字</h2><p>普通的文字<br>**加粗的文字**<br><strong>加粗的文字</strong></p>
+<h2 id="表示倾斜文字"><a href="#表示倾斜文字" class="headerlink" title="*        *表示倾斜文字"></a>*        *表示倾斜文字</h2><p>*这是一段斜体字*<br><em>这是一段斜体字</em></p>
+<h2 id="表示删除文字"><a href="#表示删除文字" class="headerlink" title="~~   ~~表示删除文字"></a>~~   ~~表示删除文字</h2><p>~~删除线~~  与文字间不能有空格<br><del>aaa</del></p>
+<hr>
+<h2 id="—-或-表示分割线"><a href="#—-或-表示分割线" class="headerlink" title="— 或 *** 表示分割线"></a>— 或 *** 表示分割线</h2><blockquote>
+<hr>
+</blockquote>
+<hr>
+<h2 id="“-gt-”表示引用，引用内可以嵌套引用"><a href="#“-gt-”表示引用，引用内可以嵌套引用" class="headerlink" title="“>”表示引用，引用内可以嵌套引用"></a>“&gt;”表示引用，引用内可以嵌套引用</h2><p>&gt;这是一个引用<br>这是引用的结尾<br>&gt;&gt;这是一个二级引用</p>
+<blockquote>
+<p>这是一个引用<br>这是引用的结尾</p>
+<blockquote>
+<p>这是一个二级引用</p>
+</blockquote>
+</blockquote>
+<hr>
+<h2 id="import-std-io-三个点组圈出来的为代码块"><a href="#import-std-io-三个点组圈出来的为代码块" class="headerlink" title="```   #import std.io   ```  三个点组圈出来的为代码块"></a>```   #import std.io   ```  三个点组圈出来的为代码块</h2><h3 id="注意-“-“-与-“-‘-“-不同，位置在键盘中数字键“1”的左边，不是引号！"><a href="#注意-“-“-与-“-‘-“-不同，位置在键盘中数字键“1”的左边，不是引号！" class="headerlink" title="注意 “ ` “ 与 “ ‘ “ 不同，位置在键盘中数字键“1”的左边，不是引号！"></a>注意 “ ` “ 与 “ ‘ “ 不同，位置在键盘中数字键“1”的左边，不是引号！</h3><p>单行<code>高亮</code>显示，多行格式化代码：<br>```<br>#import a.h<br>if (a &gt; 3) {<br>printf(“yes”);<br>}<br>```</p>
+<pre><code>#import a.h
+if (a &gt; 3) {
+printf("yes"); //代码注解
+}</code></pre><hr>
+<h2 id="“-“-表示无序序列"><a href="#“-“-表示无序序列" class="headerlink" title="“ - “ 表示无序序列"></a>“ - “ 表示无序序列</h2><p>- 第一天<br>下海捉鱼<br>- 第二天<br>上岛撒欢</p>
+<ul>
+<li>第一天<br>下海捉鱼</li>
+<li>第二天<br>上岛撒欢</li>
+</ul>
+<hr>
+<h2 id="“1-2-3-等”表示有序序列"><a href="#“1-2-3-等”表示有序序列" class="headerlink" title="“1.2.3. 等”表示有序序列"></a>“1.2.3. 等”表示有序序列</h2><ol>
+<li>吃海鲜</li>
+<li>睡帐篷</li>
+<li>打豆豆</li>
+<li>开飞机</li>
+</ol>
+<ul>
+<li>开啤酒</li>
+</ul>
+<ol start="5">
+<li>打豆豆</li>
+</ol>
+<hr>
+<h2 id="lt-gt-表示网址"><a href="#lt-gt-表示网址" class="headerlink" title="<> 表示网址"></a>&lt;&gt; 表示网址</h2><p>&lt;1260807001@qq.com(邮箱地址)  &gt;<br> <a href="mailto:1260807001@qq.com" target="_blank" rel="noopener">1260807001@qq.com</a></p>
+<hr>
+<h2 id="插入图片"><a href="#插入图片" class="headerlink" title="插入图片"></a>插入图片</h2><p>![图片叫什么](图片的网址)</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/2517476-5c6e85898cc83f30.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图片叫什么，网址为：http://iconfont.alicdn.com/t/1512879992270.jpg@200h_200w.jpg"></p>
+<hr>
+<h2 id="加文字超链接"><a href="#加文字超链接" class="headerlink" title="加文字超链接"></a>加文字超链接</h2><p>[这是一个带超链接的文字](<a href="https://www.baidu.com/" target="_blank" rel="noopener">https://www.baidu.com/</a>)</p>
+<p><a href="https://www.baidu.com/" target="_blank" rel="noopener">这是一个带超链接的文字,点击即跳转https://www.baidu.com/</a></p>
+<hr>
+<h2 id="化学式不同平台支持不一，仅做参考"><a href="#化学式不同平台支持不一，仅做参考" class="headerlink" title="化学式不同平台支持不一，仅做参考"></a>化学式不同平台支持不一，仅做参考</h2><p>化学价或平方的写法 = Sad^2^ + H~2~O</p>
+<h4 id="此处不支持-化学价或平方的写法-Sad-2-H2O"><a href="#此处不支持-化学价或平方的写法-Sad-2-H2O" class="headerlink" title="此处不支持 化学价或平方的写法 = Sad^2^ + H2O"></a>此处不支持 化学价或平方的写法 = Sad^2^ + H<del>2</del>O</h4><p>其中“-”减号要注意最好转译 7 - 4 = 3    </p>
+<h4 id="此处不支持-7-4-3"><a href="#此处不支持-7-4-3" class="headerlink" title="此处不支持 7 - 4 = 3"></a>此处不支持 7 - 4 = 3</h4><hr>
+<h2 id="流程图不同平台支持不一，仅做参考"><a href="#流程图不同平台支持不一，仅做参考" class="headerlink" title="流程图不同平台支持不一，仅做参考"></a>流程图不同平台支持不一，仅做参考</h2><pre><code>```flow 
+st=&gt;start: 开始 
+op=&gt;operation: My Operation 
+cond=&gt;condition: Yes or No? 
+e=&gt;end 
+st-&gt;op-&gt;cond 
+cond(yes)-&gt;e 
+cond(no)-&gt;op 
+&amp;```
+</code></pre><hr>
+<h3 id="最后放一个不太全的注解"><a href="#最后放一个不太全的注解" class="headerlink" title="最后放一个不太全的注解^_^"></a>最后放一个<a href="https://upload-images.jianshu.io/upload_images/7505161-d574f0af224b7df7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/551" target="_blank" rel="noopener">不太全的注解^_^</a></h3><hr>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+  </article>
+  
+    
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong>本文作者：</strong>cl<br>
+<strong>本文链接：</strong><a href="http://kajiter.github.io/2019/11/27/Markdown/" title="http://kajiter.github.io/2019/11/27/Markdown/" target="_blank" rel="noopener">http://kajiter.github.io/2019/11/27/Markdown/</a><br>
+
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+</div>
+
+
+  
+  <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="/js/app.js?v=1575705635484"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+
+</html>

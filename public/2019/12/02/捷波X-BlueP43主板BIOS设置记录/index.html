@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  
+  <title>捷波X-BlueP43主板BIOS设置记录 - 烟雨行舟</title>
+  <meta charset="UTF-8">
+  <meta name="description" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png">
+  <meta name="description" content="这是一个十多年前奇葩的主板，让我无数次的掉进深沟的老主板，必须记录下来开机按 Del 进入 BIOS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="捷波X-BlueP43主板BIOS设置记录">
+<meta property="og:url" content="http://kajiter.github.io/2019/12/02/捷波X-BlueP43主板BIOS设置记录/index.html">
+<meta property="og:site_name" content="烟雨行舟">
+<meta property="og:description" content="这是一个十多年前奇葩的主板，让我无数次的掉进深沟的老主板，必须记录下来开机按 Del 进入 BIOS">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://i.loli.net/2019/12/02/tjH5XnGg4NQqVuZ.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/02/x4iErJ5Vd8ZqzcM.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/02/atdS43pg6mIG9Qi.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/02/EAmSHU51raKkzpn.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/02/N8VHQRpXrZAGOk4.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/02/sz4Pi5Hf2yBD3hl.png">
+<meta property="og:image" content="https://i.loli.net/2019/12/02/J3GKjlfPU4pXx17.jpg">
+<meta property="og:updated_time" content="2019-12-02T15:30:48.808Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="捷波X-BlueP43主板BIOS设置记录">
+<meta name="twitter:description" content="这是一个十多年前奇葩的主板，让我无数次的掉进深沟的老主板，必须记录下来开机按 Del 进入 BIOS">
+<meta name="twitter:image" content="https://i.loli.net/2019/12/02/tjH5XnGg4NQqVuZ.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  
+  
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
+  <link rel="stylesheet" href="/css/style.css?v=1575705635415">
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://i.loli.net/2019/11/25/zkSsGC7NlrM3jJ8.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="cl" class="mdui-btn mdui-btn-icon"><img src="https://i.loli.net/2019/11/25/GBCl3rmnS4aZRM6.jpg"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="cl">
+            <img src="https://i.loli.net/2019/11/25/GBCl3rmnS4aZRM6.jpg" alt="cl">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>19</div>
+        <div><span>标签</span>0</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </ul>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">社交按钮</h3>
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/28273557" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/kajiter/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a><a class="mdui-ripple" href="http://weibo.com/" target="_blank" mdui-tooltip="{content: 'Weibo'}" style="color: rgb(125, 23, 90);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-weibo"></i>
+        </a>
+    </div>
+</div>
+  
+  
+
+  
+  
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2019 cl
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+    <div class="nexmoe-post-cover"> 
+        
+        <img src="https://i.loli.net/2019/12/02/J3GKjlfPU4pXx17.jpg">
+        
+        <h1>捷波X-BlueP43主板BIOS设置记录</h1>
+    </div>
+  <div class="nexmoe-post-meta">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2019年12月02日</a>
+    <a><i class="nexmoefont icon-areachart"></i>555 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+    
+    
+  </div>
+  <article>
+    <h1 id="这是一个十多年前奇葩的主板，让我无数次的掉进深沟的老主板，必须记录下来"><a href="#这是一个十多年前奇葩的主板，让我无数次的掉进深沟的老主板，必须记录下来" class="headerlink" title="这是一个十多年前奇葩的主板，让我无数次的掉进深沟的老主板，必须记录下来"></a>这是一个十多年前奇葩的主板，让我无数次的掉进深沟的老主板，必须记录下来</h1><h2 id="开机按-Del-进入-BIOS"><a href="#开机按-Del-进入-BIOS" class="headerlink" title="开机按 Del 进入 BIOS"></a>开机按 Del 进入 BIOS</h2><a id="more"></a>
+
+<h2 id="配置-U盘引导系统异常麻烦"><a href="#配置-U盘引导系统异常麻烦" class="headerlink" title="配置 U盘引导系统异常麻烦"></a>配置 U盘引导系统异常麻烦</h2><h3 id="1-选择主板整合设备设置-，第四项“Integrated-Peripherals”"><a href="#1-选择主板整合设备设置-，第四项“Integrated-Peripherals”" class="headerlink" title="1.选择主板整合设备设置 ，第四项“Integrated Peripherals”"></a>1.选择主板整合设备设置 ，第四项“Integrated Peripherals”</h3><p><img src="https://i.loli.net/2019/12/02/tjH5XnGg4NQqVuZ.png" alt="image.png"></p>
+<hr>
+<h3 id="2-进入菜单之后选择第二项“Onboard-Device-Function”"><a href="#2-进入菜单之后选择第二项“Onboard-Device-Function”" class="headerlink" title="2.进入菜单之后选择第二项“Onboard Device Function”"></a>2.进入菜单之后选择第二项“Onboard Device Function”</h3><p><img src="https://i.loli.net/2019/12/02/x4iErJ5Vd8ZqzcM.png" alt="image.png"></p>
+<hr>
+<h3 id="3-一定要把图中高亮部最后一项，分支持U盘设备，“USB-Storage-Legacy-Support”设置为Enabled"><a href="#3-一定要把图中高亮部最后一项，分支持U盘设备，“USB-Storage-Legacy-Support”设置为Enabled" class="headerlink" title="3.一定要把图中高亮部最后一项，分支持U盘设备，“USB Storage Legacy Support”设置为Enabled ;"></a>3.一定要把图中高亮部最后一项，分支持U盘设备，“USB Storage Legacy Support”设置为Enabled ;</h3><ul>
+<li><h3 id="同时也可以把除了第二项“-Onboard-PCIE-Lan-BootRom”保持-Disabled以外，其他所有项均设置为-Enabled-。"><a href="#同时也可以把除了第二项“-Onboard-PCIE-Lan-BootRom”保持-Disabled以外，其他所有项均设置为-Enabled-。" class="headerlink" title="同时也可以把除了第二项“ Onboard PCIE Lan BootRom”保持 Disabled以外，其他所有项均设置为 Enabled 。"></a>同时也可以把除了第二项“ Onboard PCIE Lan BootRom”保持 Disabled以外，其他所有项均设置为 Enabled 。</h3></li>
+<li><h3 id="设置成功后-“保存退出并重新启动”-F10-，"><a href="#设置成功后-“保存退出并重新启动”-F10-，" class="headerlink" title="设置成功后 “保存退出并重新启动”(F10) ，"></a>设置成功后 <em>“保存退出并重新启动”(F10)</em> ，</h3></li>
+<li><h3 id="然后再重新回到这个页面，检查能否在最后一行识别出我们插上的-U盘。"><a href="#然后再重新回到这个页面，检查能否在最后一行识别出我们插上的-U盘。" class="headerlink" title="然后再重新回到这个页面，检查能否在最后一行识别出我们插上的 U盘。"></a>然后再重新回到这个页面，检查能否在最后一行识别出我们插上的 U盘。</h3></li>
+</ul>
+<p><img src="https://i.loli.net/2019/12/02/atdS43pg6mIG9Qi.png" alt="image.png"></p>
+<p>↑如图，最后一行就已经识别出 U盘了。</p>
+<hr>
+<h3 id="4-按两次ESC-，回到BIOS主菜单，选择第二项“Advanced-BIOS-Setup”，进入高级系统设置"><a href="#4-按两次ESC-，回到BIOS主菜单，选择第二项“Advanced-BIOS-Setup”，进入高级系统设置" class="headerlink" title="4. 按两次ESC ，回到BIOS主菜单，选择第二项“Advanced BIOS Setup”，进入高级系统设置"></a>4. 按两次ESC ，回到BIOS主菜单，选择第二项“Advanced BIOS Setup”，进入高级系统设置</h3><p><img src="https://i.loli.net/2019/12/02/EAmSHU51raKkzpn.png" alt="image.png"></p>
+<h3 id="提示：启动时想要关闭硬件检测（这里指鼠标，键盘不需要连接也希望能够正常启动），需要进入第一项“Standard-CMOS-Features”-gt-找到“Halt-On”-gt-设置为“No-Errors”-即可。"><a href="#提示：启动时想要关闭硬件检测（这里指鼠标，键盘不需要连接也希望能够正常启动），需要进入第一项“Standard-CMOS-Features”-gt-找到“Halt-On”-gt-设置为“No-Errors”-即可。" class="headerlink" title="提示：启动时想要关闭硬件检测（这里指鼠标，键盘不需要连接也希望能够正常启动），需要进入第一项“Standard CMOS Features” -> 找到“Halt On” -> 设置为“No Errors” 即可。"></a>提示：启动时想要关闭硬件检测（这里指鼠标，键盘不需要连接也希望能够正常启动），需要进入第一项“Standard CMOS Features” -&gt; 找到“Halt On” -&gt; 设置为“No Errors” 即可。</h3><hr>
+<h3 id="5-选择进入第三项“Hard-Disk-Boot-Priority”，手动设置硬盘启动顺序"><a href="#5-选择进入第三项“Hard-Disk-Boot-Priority”，手动设置硬盘启动顺序" class="headerlink" title="5.选择进入第三项“Hard Disk Boot Priority”，手动设置硬盘启动顺序"></a>5.选择进入第三项“Hard Disk Boot Priority”，手动设置硬盘启动顺序</h3><p><img src="https://i.loli.net/2019/12/02/N8VHQRpXrZAGOk4.png" alt="image.png"></p>
+<h3 id="ps-本页面虽然有“First-Boot-Device”之类的，但是经试验发现没什么卵用。但最后还是进去设置一下第一启动项设为-USB-FDD-，第二启动项设为-SATA硬盘。"><a href="#ps-本页面虽然有“First-Boot-Device”之类的，但是经试验发现没什么卵用。但最后还是进去设置一下第一启动项设为-USB-FDD-，第二启动项设为-SATA硬盘。" class="headerlink" title="ps: 本页面虽然有“First Boot Device”之类的，但是经试验发现没什么卵用。但最后还是进去设置一下第一启动项设为 USB-FDD ，第二启动项设为 SATA硬盘。"></a>ps: 本页面虽然有“First Boot Device”之类的，但是经试验发现没什么卵用。但最后还是进去设置一下第一启动项设为 USB-FDD ，第二启动项设为 SATA硬盘。</h3><h3 id="提示：“Boot-Up-Floppy-Seek”-为启动时检查软盘，建议设为-Disabled-，否则每次启动均会卡在设备检查界面，必须手动按-F1才会进一步启动-BIOS。"><a href="#提示：“Boot-Up-Floppy-Seek”-为启动时检查软盘，建议设为-Disabled-，否则每次启动均会卡在设备检查界面，必须手动按-F1才会进一步启动-BIOS。" class="headerlink" title="提示：“Boot Up Floppy Seek” 为启动时检查软盘，建议设为 Disabled ，否则每次启动均会卡在设备检查界面，必须手动按 F1才会进一步启动 BIOS。"></a>提示：“Boot Up Floppy Seek” 为启动时检查软盘，建议设为 Disabled ，否则每次启动均会卡在设备检查界面，必须手动按 F1才会进一步启动 BIOS。</h3><hr>
+<h3 id="6-此时应该出现我们的-USB-设备了，根据屏幕下方的提示，光标移动到此-USB-设备上，然后按键盘“Page-UP”按钮，把-USB-启动项提升为第一启动项。保存退出并重启即可进入-U盘引导。"><a href="#6-此时应该出现我们的-USB-设备了，根据屏幕下方的提示，光标移动到此-USB-设备上，然后按键盘“Page-UP”按钮，把-USB-启动项提升为第一启动项。保存退出并重启即可进入-U盘引导。" class="headerlink" title="6.此时应该出现我们的 USB 设备了，根据屏幕下方的提示，光标移动到此 USB 设备上，然后按键盘“Page UP”按钮，把 USB 启动项提升为第一启动项。保存退出并重启即可进入 U盘引导。"></a>6.此时应该出现我们的 USB 设备了，根据屏幕下方的提示，光标移动到此 USB 设备上，然后按键盘“Page UP”按钮，把 USB 启动项提升为第一启动项。保存退出并重启即可进入 U盘引导。</h3><ul>
+<li><h3 id="如果此处没有出现我们的-USB-设备，则需要检查第-3-步。"><a href="#如果此处没有出现我们的-USB-设备，则需要检查第-3-步。" class="headerlink" title="如果此处没有出现我们的 USB 设备，则需要检查第 3 步。"></a>如果此处没有出现我们的 USB 设备，则需要检查第 3 步。</h3></li>
+</ul>
+<p><img src="https://i.loli.net/2019/12/02/sz4Pi5Hf2yBD3hl.png" alt="image.png"></p>
+<hr>
+<hr>
+<p><img src="https://i.loli.net/2019/12/02/J3GKjlfPU4pXx17.jpg" alt="IMG_7983.jpg"></p>
+<hr>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+  </article>
+  
+    
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong>本文作者：</strong>cl<br>
+<strong>本文链接：</strong><a href="http://kajiter.github.io/2019/12/02/捷波X-BlueP43主板BIOS设置记录/" title="http://kajiter.github.io/2019/12/02/捷波X-BlueP43主板BIOS设置记录/" target="_blank" rel="noopener">http://kajiter.github.io/2019/12/02/捷波X-BlueP43主板BIOS设置记录/</a><br>
+
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+</div>
+
+
+  
+  <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="/js/app.js?v=1575705635424"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+
+
+
+  
+
+
+
+
+
+</body>
+
+</html>
