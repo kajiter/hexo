@@ -14,6 +14,17 @@ cover: https://i.loli.net/2019/11/28/ov3aYkcmF6uZBH8.png
 
 ### 然而实际操作自然不会如它官方封面介绍的这么简单，下面是实际操作教程。
 
+```
+hexo new 文章名称
+
+hexo clean
+
+hexo g
+
+hexo d
+
+```
+
 
 ## 图床（免费的图片服务器）
 ### [https://sm.ms/](https://sm.ms/) 简单易懂，我才不会说是因为网址好记呢。

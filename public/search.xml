@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>关于算法APP的想法</title>
+      <link href="/2020/01/12/%E5%85%B3%E4%BA%8E%E7%AE%97%E6%B3%95APP%E7%9A%84%E6%83%B3%E6%B3%95/"/>
+      <url>/2020/01/12/%E5%85%B3%E4%BA%8E%E7%AE%97%E6%B3%95APP%E7%9A%84%E6%83%B3%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<a id="more"></a><p>可以制作一款 APP，用游戏的方式讲解各种算法技巧。分为基础版的脑力开发，和进阶版的专业知识。<br>比如说制作 C语言版的排序算法，通过细节的设计，协助用户独立完成某一算法设计，有调试按钮，点击后随机生成100 条不同高度的彩带，3 秒倒计时后，开始按用户算法运行，有成功提示和失败提示。<br><img src="https://i.loli.net/2020/01/12/nxtsU3TI5wFbD2u.png" alt="image.png"></p><p><img src="https://i.loli.net/2020/01/12/iSyhBeNFIMdLaJ6.png" alt="image.png"></p><hr><p>今天在抖音看到一条有趣的脑洞，有机会可以延伸思考。<br>人类进化史上，先学会使用陶器后退化至使用石器；华夏文明与美索文明几乎同一时期爆发式发展，两地却远隔万里，语言体系都不同，没有相互学习互相交流的印记。各文明均有相似的神话，或是外星文明的解读。推论——外星文明定期造访地球，改变环境，传授科技。</p><hr><h2 id="Logan-洛基-可以用作名字"><a href="#Logan-洛基-可以用作名字" class="headerlink" title="Logan 洛基 可以用作名字"></a>Logan 洛基 可以用作名字</h2><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ffmpeg使用记录</title>
+      <link href="/2019/12/16/ffmpeg%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+      <url>/2019/12/16/ffmpeg%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="ffmpeg语法："><a href="#ffmpeg语法：" class="headerlink" title="ffmpeg语法："></a>ffmpeg语法：</h2><pre><code>// 改后缀名ffmpeg -i aaa.avi newName.mp4// 视频截取 注意-to 后的时间参数为从初始值开始截取多少时间ffmpeg -ss 00:11:05 -i old.mp4 -to 00:01:50 new.mp4# 解释：从视频 old.mp4的第11分05秒开始，截取1分05秒的视频，并命名为new.mp4// -y 参数含义导出文件时，如果发现路径下已有该命名的文件，则强制覆盖。ffmpeg -y *****</code></pre><hr><a id="more"></a><hr><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>捷波X-BlueP43主板BIOS设置记录</title>
       <link href="/2019/12/02/%E6%8D%B7%E6%B3%A2X-BlueP43%E4%B8%BB%E6%9D%BFBIOS%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/"/>
       <url>/2019/12/02/%E6%8D%B7%E6%B3%A2X-BlueP43%E4%B8%BB%E6%9D%BFBIOS%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/</url>
@@ -73,7 +99,7 @@
       <link href="/2019/11/28/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8MacOS%E4%B8%AD%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
       <url>/2019/11/28/%E4%BD%BF%E7%94%A8Hexo%E5%9C%A8MacOS%E4%B8%AD%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
       
-        <content type="html"><![CDATA[<p><img src="https://i.loli.net/2019/11/28/psi9Hu2qDc1dXLP.png" alt="Screen Shot 2019-11-28 at 12.10.28.png"></p><a id="more"></a><h1 id="hexo-官方文档"><a href="#hexo-官方文档" class="headerlink" title="hexo 官方文档"></a><a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">hexo 官方文档</a></h1><h3 id="然而实际操作自然不会如它官方封面介绍的这么简单，下面是实际操作教程。"><a href="#然而实际操作自然不会如它官方封面介绍的这么简单，下面是实际操作教程。" class="headerlink" title="然而实际操作自然不会如它官方封面介绍的这么简单，下面是实际操作教程。"></a>然而实际操作自然不会如它官方封面介绍的这么简单，下面是实际操作教程。</h3><h2 id="图床（免费的图片服务器）"><a href="#图床（免费的图片服务器）" class="headerlink" title="图床（免费的图片服务器）"></a>图床（免费的图片服务器）</h2><h3 id="https-sm-ms-简单易懂，我才不会说是因为网址好记呢。"><a href="#https-sm-ms-简单易懂，我才不会说是因为网址好记呢。" class="headerlink" title="https://sm.ms/ 简单易懂，我才不会说是因为网址好记呢。"></a><a href="https://sm.ms/" target="_blank" rel="noopener">https://sm.ms/</a> 简单易懂，我才不会说是因为网址好记呢。</h3><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<p><img src="https://i.loli.net/2019/11/28/psi9Hu2qDc1dXLP.png" alt="Screen Shot 2019-11-28 at 12.10.28.png"></p><a id="more"></a><h1 id="hexo-官方文档"><a href="#hexo-官方文档" class="headerlink" title="hexo 官方文档"></a><a href="https://hexo.io/zh-cn/index.html" target="_blank" rel="noopener">hexo 官方文档</a></h1><h3 id="然而实际操作自然不会如它官方封面介绍的这么简单，下面是实际操作教程。"><a href="#然而实际操作自然不会如它官方封面介绍的这么简单，下面是实际操作教程。" class="headerlink" title="然而实际操作自然不会如它官方封面介绍的这么简单，下面是实际操作教程。"></a>然而实际操作自然不会如它官方封面介绍的这么简单，下面是实际操作教程。</h3><pre><code>hexo new 文章名称hexo cleanhexo ghexo d</code></pre><h2 id="图床（免费的图片服务器）"><a href="#图床（免费的图片服务器）" class="headerlink" title="图床（免费的图片服务器）"></a>图床（免费的图片服务器）</h2><h3 id="https-sm-ms-简单易懂，我才不会说是因为网址好记呢。"><a href="#https-sm-ms-简单易懂，我才不会说是因为网址好记呢。" class="headerlink" title="https://sm.ms/ 简单易懂，我才不会说是因为网址好记呢。"></a><a href="https://sm.ms/" target="_blank" rel="noopener">https://sm.ms/</a> 简单易懂，我才不会说是因为网址好记呢。</h3><hr><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       

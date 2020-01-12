@@ -25,7 +25,7 @@
   
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1575818677182">
+  <link rel="stylesheet" href="/css/style.css?v=1578841208672">
 <link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 <body class="mdui-drawer-body-left">
@@ -49,7 +49,7 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>19</div>
+        <div><span>文章</span>21</div>
         <div><span>标签</span>0</div>
         <div><span>分类</span>0</div>
     </div>
@@ -101,7 +101,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/10/">十月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">九月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a></li></ul>
     </div>
   </div>
 
@@ -109,7 +109,7 @@
   
 </aside>
     <div class="nexmoe-copyright">
-        &copy; 2019 cl
+        &copy; 2020 cl
         Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
         & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
     </div>
@@ -118,6 +118,40 @@
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
         <section class="nexmoe-posts" id="brand-waterfall">
+    
+    <div class="nexmoe-post">
+        <a href="/2019/12/16/ffmpeg使用记录/">
+            <div class="nexmoe-post-cover mdui-ripple"> 
+                
+                    <img src="https://i.loli.net/2019/11/25/zkSsGC7NlrM3jJ8.jpg" alt="ffmpeg使用记录">
+                
+                <h1>ffmpeg使用记录</h1>
+            </div>
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年12月16日</a>
+            <a><i class="nexmoefont icon-areachart"></i>164 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+            
+            
+        </div>
+        <article>
+            
+            <h2 id="ffmpeg语法："><a href="#ffmpeg语法：" class="headerlink" title="ffmpeg语法："></a>ffmpeg语法：</h2><pre><code>// 改后缀名
+ffmpeg -i aaa.avi newName.mp4
+
+// 视频截取 注意-to 后的时间参数为从初始值开始截取多少时间
+ffmpeg -ss 00:11:05 -i old.mp4 -to 00:01:50 new.mp4
+# 解释：从视频 old.mp4的第11分05秒开始，截取1分05秒的视频，并命名为new.mp4
+
+
+// -y 参数含义导出文件时，如果发现路径下已有该命名的文件，则强制覆盖。
+ffmpeg -y *****
+
+</code></pre><hr>
+            
+        </article>
+    </div>
     
     <div class="nexmoe-post">
         <a href="/2019/12/02/捷波X-BlueP43主板BIOS设置记录/">
@@ -251,7 +285,7 @@
         </a>
         <div class="nexmoe-post-meta">
             <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月28日</a>
-            <a><i class="nexmoefont icon-areachart"></i>119 字</a>
+            <a><i class="nexmoefont icon-areachart"></i>131 字</a>
             <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
             
             
@@ -335,33 +369,6 @@
         </article>
     </div>
     
-    <div class="nexmoe-post">
-        <a href="/2019/11/25/git使用总结/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                <img src="https://i.loli.net/2019/11/28/lqIS1d5VyJuhcjt.jpg" alt="git使用总结">
-                
-                <h1>git使用总结</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月25日</a>
-            <a><i class="nexmoefont icon-areachart"></i>1.6k 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 6 分钟</a>
-            
-            
-        </div>
-        <article>
-            
-            <h2 id="首次使用-git-或长期未使用-git-导致-ssh-秘钥过期"><a href="#首次使用-git-或长期未使用-git-导致-ssh-秘钥过期" class="headerlink" title="首次使用 git 或长期未使用 git 导致 ssh 秘钥过期"></a>首次使用 git 或长期未使用 git 导致 ssh 秘钥过期</h2><h3 id="添加ssh钥匙"><a href="#添加ssh钥匙" class="headerlink" title="添加ssh钥匙"></a>添加ssh钥匙</h3><p>1.在finder 中 <code>command+shift+G</code> 查找<code>~/.ssh</code> 目录，如果有<code>id_rsa.pub</code>文件。则可以直接使用，使用text 打开，从头复制id_rsa.pub里的内容（末尾的邮箱或提示文字不需要），粘贴在GitHub库的-settings-keys下，Title 就是邮箱。</p>
-<p>2.如果没有，则需要初始化创建 RSA 文件。在 terminal 中切换到用户目录下，之后运行</p>
-<p><code>ssh-keygen -t rsa -C "*****@qq.com" //github所使用的的邮箱名</code></p>
-<p>成功后会生成<code>id_rsa</code>和<code>id_rsa.pub</code>文件。参考 1. 复制.pub内容到 GitHub setting 里面即可。</p>
-<p>3.在 terminal 中切换到合适的代码存放位置。Linux 创建目录（文件夹）语句<code>mkdir aaa</code></p>
-            
-        </article>
-    </div>
-    
 </section>
 
     <nav class="nexmoe-page-nav">
@@ -383,7 +390,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1575818677186"></script>
+<script src="/js/app.js?v=1578841208675"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
