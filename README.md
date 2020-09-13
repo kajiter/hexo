@@ -43,7 +43,7 @@ git clone git@github.com:kajiter/hexo.git
 
 ⑦必须 cd 到 config.yml 所在的路径下
 ```
-(cd MyBlog/clBlog)
+(cd github/MyBlog)
 npm install 
 npm install hexo-deployer-git --save
 ```

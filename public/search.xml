@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>人生而不等</title>
+      <link href="/2020/01/17/%E4%BA%BA%E7%94%9F%E8%80%8C%E4%B8%8D%E7%AD%89/"/>
+      <url>/2020/01/17/%E4%BA%BA%E7%94%9F%E8%80%8C%E4%B8%8D%E7%AD%89/</url>
+      
+        <content type="html"><![CDATA[<h3 id="这世上从来没有两片完全相同的树叶"><a href="#这世上从来没有两片完全相同的树叶" class="headerlink" title="这世上从来没有两片完全相同的树叶"></a>这世上从来没有两片完全相同的树叶</h3><h3 id="这世上竟然会有人相信“人生而平等”"><a href="#这世上竟然会有人相信“人生而平等”" class="headerlink" title="这世上竟然会有人相信“人生而平等”"></a>这世上竟然会有人相信“人生而平等”</h3><p>让那些抱怨家庭，抱怨社会的傻逼早日登入极乐世界吧！ 阿门</p><p>生命的过程中无可避免的两大要素：遗传与环境。当然这并不是严谨的生物学理论，而是一种宏观社会学的观点。这里的遗传包括遗传基因，也包括遗传环境，总之父辈所提供的一切与之类似的遗传因素都可归纳为遗传；这里的环境即为非遗传的所有客观存在的物理环境。</p><p>也可以换个角度理解，遗传代表着与父辈的相似性，而环境既是改变这种相似性的潜在因素。然而至于说改变了没有，以及改变了多少，也许只有“上帝因子”才加以量化说明。</p><a id="more"></a><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于算法APP的想法</title>
       <link href="/2020/01/12/%E5%85%B3%E4%BA%8E%E7%AE%97%E6%B3%95APP%E7%9A%84%E6%83%B3%E6%B3%95/"/>
       <url>/2020/01/12/%E5%85%B3%E4%BA%8E%E7%AE%97%E6%B3%95APP%E7%9A%84%E6%83%B3%E6%B3%95/</url>
