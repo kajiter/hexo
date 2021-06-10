@@ -6,6 +6,7 @@
     "version": "3.9.0"
   },
   "dependencies": {
+    "bluebird": "^3.7.0",
     "hexo": "^3.9.0",
     "hexo-deployer-git": "^2.0.0",
     "hexo-filter-github-emojis": "^2.1.0",

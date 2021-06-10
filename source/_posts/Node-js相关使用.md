@@ -23,15 +23,20 @@ Node.js 使 JavaScript 语言可以运行在服务端，使用事件驱动，非
 ### npm 的常用方法
 ### 查看是否安装及版本号
 ```
-➜  ~ node -v
+node -v
 v10.10.0
-➜  ~ npm -v
+
+npm -v
 6.13.1
 ```
 
-### 更新
+### 更新npm
 ```
 npm update
+```
+或
+```
+sudo npm install -g npm
 ```
 
 ### 安装package
@@ -64,16 +69,13 @@ $ npm uninstall <package>
 
 ### 查看源地址
 ```
-➜  ~ npm config get registry
+npm config get registry
 https://registry.npm.taobao.org/
 ```
 ### 更换源/镜像 地址
 ```
 #国内被墙，就切换成淘宝源
 npm config set registry https://registry.npm.taobao.org
-
-
-
 
 # 默认源
 npm config set registry https://registry.npmjs.org
@@ -85,7 +87,68 @@ npm config set registry https://registry.npmjs.org
 ### MacOS 下使用 Homebrew 安装
 ```
 brew install node 
+
 ```
+
+## node 的更新
+```
+第一步，先查看本机node.js版本：
+node -v
+
+第二步，清除node.js的cache：
+sudo npm cache clean -f
+
+第三步，安装 n 工具，这个工具是专门用来管理node.js版本的，别怀疑这个工具的名字，是他是他就是他，他的名字就是 "n"
+sudo npm install -g n
+
+第四步，安装稳定版本的node.js
+sudo n stable
+
+第五步，再次查看本机的node.js版本：
+node -v
+
+第六步，顺带更新npm到最新版
+sudo npm install -g npm
+
+第七步，验证node 和 npm 都已更新好
+node -v
+
+npm -v
+
+```
+## node 版本切换
+需要用到上一步介绍过的npm中的包——n。
+```
+查看n包是否正常
+n -V
+2.1.12
+
+列出所有node版本
+$ n ls
+
+安装某个版本node
+$ n xx.xx.x (xx.xx.x 为要安装的版本号)
+## 本机hexo所使用的的 node 为 12.20.1 版本
+
+安装最新版本node
+$ n lastest
+
+安装最新稳定版node
+$ n stable
+
+切换node版本(输入命令后上下键盘选择确认,不推荐！)
+$ n
+
+删除某个版本node
+$ n rm xx.xx.x
+
+使用某个node版本来运行脚本
+$ n use xx.xx.x a.js
+
+
+```
+
+## node 命令行的退出命令，输入```.exit``` ，别忘了"."
 
 ---
 

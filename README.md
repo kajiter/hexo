@@ -82,4 +82,58 @@ git add .
 git commit –m "xxxx"
 git push 
 ```
+
+五、升级依赖库 npm
+升级命令
+```
+# npm install --global npm
+npm install -g npm
+
+```
+
+若报错```npm WARN  checkPermissions Missing write access to /usr/local/lib/node_modules```则为权限不够
+
+解决方案: 命令前加sudo，然后输入密码执行，这是解决权限问题的通用办法，需要记忆
+```
+sudo npm install --global npm
+
+```
+六、升级 node.js
+```
+第一步，先查看本机node.js版本：
+node -v
+
+第二步，清除node.js的cache：
+sudo npm cache clean -f
+
+第三步，安装 n 工具，这个工具是专门用来管理node.js版本的，别怀疑这个工具的名字，是他是他就是他，他的名字就是 "n"
+sudo npm install -g n
+
+第四步，安装稳定版本的node.js
+sudo n stable
+
+第五步，再次查看本机的node.js版本：
+node -v
+
+第六步，顺带更新npm到最新版
+sudo npm install -g npm
+
+第七步，验证node 和 npm 都已更新好
+node -v
+
+npm -v
+
+```
+
+六、升级 Hexo
+
+```
+hexo version
+
+npm install -g hexo
+
+hexo v
+
+```
+
 ---

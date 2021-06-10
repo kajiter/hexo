@@ -13,7 +13,7 @@ cover: https://i.loli.net/2020/01/12/nxtsU3TI5wFbD2u.png
 
 可以制作一款 APP，用游戏的方式讲解各种算法技巧。分为基础版的脑力开发，和进阶版的专业知识。
 比如说制作 C语言版的排序算法，通过细节的设计，协助用户独立完成某一算法设计，有调试按钮，点击后随机生成100 条不同高度的彩带，3 秒倒计时后，开始按用户算法运行，有成功提示和失败提示。
-![image.png](https://i.loli.net/2020/01/12/nxtsU3TI5wFbD2u.png)
+
 
 ![image.png](https://i.loli.net/2020/01/12/iSyhBeNFIMdLaJ6.png)
 
