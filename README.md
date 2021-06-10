@@ -41,7 +41,7 @@ git clone git@github.com:kajiter/hexo.git
 ---
 **二、恢复配置**
 
-⑦必须 cd 到 config.yml 所在的路径下
+⑦必须 cd 到 config.yml 所在的路径下,在本机中为 ```/Users/CL/Documents/github/MyBlog```
 ```
 (cd github/MyBlog)
 npm install 
@@ -56,6 +56,7 @@ hexo s
 #deploy
 hexo d
 ```
+先部署完文章，再进行 git操作
 ---
 **三、完成部署，开始创作**
 
@@ -63,6 +64,7 @@ hexo d
 ```
 hexo new NewBlogName
 ```
+新文章在 ```/MyBlog/source/``` 路径下, 默认为 markdown 编辑
 ---
 **四、git 命令复习**
 
@@ -74,6 +76,7 @@ git reset --hard  (6位id值)  回退到某一ID对应的版本（既可以是�
 
 git pull
 git pull --rebase origin master
+
 
 git add .
 git commit –m "xxxx"
